@@ -69,7 +69,7 @@ $cardIdentifier = $forms["mandatorySecurityCardIdentifier"];
 $viewPageName = $forms["viewPageName"];
 $viewPageRequest = $forms["viewPageRequest"];
 $identifier = Sanitize::__string(Input::grab("identifier"));
-$values = count($values) ? $values : array();
+$values = is_array($values) ? $values : array();
 ?>
 
 
