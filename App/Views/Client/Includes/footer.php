@@ -64,6 +64,7 @@
     $content = $footer["content"];
     $links = $footer["links"];
 
+
     ?>
 
  <footer class="position-absolute w-100">
@@ -74,7 +75,7 @@
                      <div class="col-md-8">
                          <div class="row">
                              <?php foreach ($titles as $title) { ?>
-                                 <?php if (count($content[$title])) { ?>
+                                 <?php if (in_array($title, array_keys($content))) { ?>
                                      <div class="col-lg-2 col-4 mt-2">
                                          <div>
                                              <a class="text-muted" href="<?php echo $links[$title] ?>"><?php echo $title ?></a>

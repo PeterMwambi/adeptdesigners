@@ -120,6 +120,7 @@ class Database
     {
         $this->errors = false;
         $this->stmt = $this->conn->prepare($sql);
+
         if (count($params)) {
             $x = 1;
             $i = 0;
